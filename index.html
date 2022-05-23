@@ -4,20 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@1,700&family=Raleway:wght@100;300;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/style/style.css" />
     <title>Desafio_grid</title>
   </head>
   <body>
     <div class="container-grid">
-      <div class="navbar">navbar</div>
-      <div class="aside-bar">aside bar</div>
-      <div class="products">
-        <div class="product">1</div>
-        <div class="product">2</div>
-        <div class="product">3</div>
-        <div class="product">4</div>
+      <div class="navbar">
+        <h1>Mi Ecommerce</h1>
       </div>
-      <div class="footer">footers</div>
+      <div class="aside-bar">
+        <h2>Categorías</h2>
+        <div class="elemento-categoria">
+          <div class="categoria">
+            <span>perfume</span>
+          </div>
+          <div class="cantidad">(2)</div>
+        </div>
+        <div class="elemento-categoria">
+          <div class="categoria">
+            <span>Ropa</span>
+          </div>
+          <div class="cantidad">(21)</div>
+        </div>
+        <div class="elemento-categoria">
+          <div class="categoria">
+            <span>Accesorios</span>
+          </div>
+          <div class="cantidad">(41)</div>
+        </div>
+        <div class="elemento-categoria">
+          <div class="categoria">
+            <span>Zapato</span>
+          </div>
+          <div class="cantidad">(10)</div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="product">
+          <img
+            src="assets/img/perfume01.jpg"
+            alt="frasco de perfume negro con caja"
+          />
+          <h3>Perfume myKingdom</h3>
+          <span>31.400</span>
+          <button>Comprar</button>
+        </div>
+        <div class="product">
+          <img
+            src="assets/img/perfume02.jpg"
+            alt="frasco de robor color gris con caja gris al lado"
+          />
+          <h3>Perfume Phantom</h3>
+          <span>68.900</span>
+          <button>Comprar</button>
+        </div>
+        <div class="product">
+          <img src="assets/img/zapato.jpg" alt="zapato negro de hombre" />
+          <h3>Zapatos Docker</h3>
+          <span>29.700</span>
+          <button>Comprar</button>
+        </div>
+        <div class="product">
+          <img
+            src="assets/img/poleron.jpg"
+            alt="poleron con gorro blanco marca puma "
+          />
+          <h3>Poleron puma</h3>
+          <span>44.700</span>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <div class="footer">@miecommerce</div>
     </div>
   </body>
 </html>

@@ -1,11 +1,14 @@
 *{
   padding: 0px;
   margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 .container-grid{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 200px auto auto auto;
   background-color: #e7e7e7;
   height: 100vh;
   grid-template-areas: 'navbar navbar navbar navbar'
@@ -17,26 +20,67 @@
 .navbar{
   grid-area: navbar;
   background-color:#25527b;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+
 }
 .aside-bar{
   grid-area: aside;
   background-color: #e7e7e7;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.elemento-categoria{
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.catergoria{
+  color:#919599;
+}
+.cantidad{
+  color: #c1c4c8;
 }
 .products{
   grid-area: products;
   display: grid;
   background-color: #e7e7e7;
   text-align: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  /* grid-template-columns: auto auto auto; */
   gap: 10px;
   padding: 10px;
 }
 .product{
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+}
+.product button{
+  background-color: #25527b;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+.product button:hover{
+  background-color: #5d88b1;
+}
+.product span{
+  font-family: 'Roboto Flex', sans-serif;
 
 }
+
 .footer{
   grid-area: footer;
   background-color: #ffffff;
-  border: 1px solid #000000;
+  text-align: center;
+  padding: 20px;
 }
